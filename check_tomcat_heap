@@ -47,7 +47,7 @@ class JavaGenSizeCheck(nagiosplugin.Check):
 		values = lines[1].split()
 		# TODO raise exception if headers/values don't exist or are unequal length
 		data_map = {}
-		for i in range(len(headers) - 1):
+		for i in range(len(headers)):
 			data_map[headers[i]] = float(values[i].rstrip(".0"))
 		return data_map
 
